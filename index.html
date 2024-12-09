@@ -3,10 +3,11 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>LA NETA SEGUROS</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
     <link rel="stylesheet" href="index.css">
-
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
 </head>
 
 <body>
@@ -62,9 +63,45 @@
         </span>
         <span>¿Necesitas ayuda?</span>
     </a>
+
+    <!-- Slider -->
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide"><img src="banner/1.png" alt="Poster-1"></div>
+            <div class="swiper-slide"><img src="banner/2.png" alt="Poster-2"></div>
+            <div class="swiper-slide"><img src="banner/3.png" alt="Poster-3"></div>
+            <div class="swiper-slide"><img src="banner/4.png" alt="Poster-4"></div>
+            <div class="swiper-slide"><img src="banner/5.png" alt="Poster-5"></div>
+            <!-- Añade más slides según sea necesario -->
+        </div>
+        <!-- Añade los botones de navegación si los necesitas -->
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <!-- Añade los puntos de paginación si los necesitas -->
+        <div class="swiper-pagination"></div>
+    </div>
+
+    
+
     <script defer src="https://use.fontawesome.com/releases/v5.15.4/js/all.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script>
+        var swiper = new Swiper('.swiper-container', {
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            loop: true,
+            autoplay: {
+            delay: 3000, // Tiempo en milisegundos entre transiciones automáticas
+            disableOnInteraction: false, // No deshabilitar autoplay después de la interacción del usuario
+        },
+        });
+    </script>
 </body>
 
 </html>
-
-
