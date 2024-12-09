@@ -1,0 +1,61 @@
+/* index.css */
+.navbar {
+    background-color: #f15a25; 
+}
+.navbar-item, .navbar-link {
+    color: #fafafa !important; /* White color for text to ensure good contrast */
+}
+.navbar-item:hover, .navbar-link:hover {
+    background-color: #ff6347; 
+}
+.navbar-link::after {
+    border-color: #fafafa !important; /* White color for the dropdown arrow */
+}
+.navbar-dropdown {
+    background-color: #f15a25; /* Set dropdown background color */
+}
+.navbar-dropdown .navbar-item {
+    color: #fafafa !important; /* White color for dropdown items */
+}
+.navbar-dropdown .navbar-item:hover {
+    background-color: #ff6347; /* Slightly darker shade for hover effect */
+}
+
+.secondary-navbar {
+    background-color: #ffffff; 
+}
+.secondary-navbar .navbar-item {
+    color: #000000 !important; /* Black color for text to ensure good contrast */
+}
+.secondary-navbar .navbar-item:hover {
+    background-color: #f0f0f0; 
+}
+
+a {
+    color: #ffffff !important; /* Ensure all links are white */
+    font-size: 0.9rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    line-height: 2.2rem;
+    display: block;
+    border-top: 2px solid transparent;
+}
+
+
+.floating-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #f15a25 !important;; 
+    color: #ffffff !important;
+    padding: 10px 20px;
+    border-radius: 50px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+.floating-button .icon {
+    margin-right: 10px;
+}
+ 
