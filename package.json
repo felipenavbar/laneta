@@ -1,0 +1,16 @@
+{
+  "name": "laneta",
+  "version": "1.0.0",
+  "description": "Nuevo repositorio del PMV LA NETA SEGUROS",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^1.7.9",
+    "openai": "^4.80.1"
+  }
+}
